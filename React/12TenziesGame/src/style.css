@@ -1,0 +1,51 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  @apply m-0 bg-primary p-5;
+}
+
+main {
+  @apply flex flex-col bg-slate-100 h-box p-10 rounded-lg max-w-3xl justify-around items-center;
+}
+
+.title {
+  @apply text-5xl font-semibold;
+}
+
+.instructions {
+  @apply text-center px-20;
+}
+
+.dice-container {
+  @apply inline-grid grid-cols-5 gap-4;
+}
+
+.die-face {
+  @apply flex items-center justify-center rounded-lg h-20 w-20 cursor-pointer shadow-small bg-white;
+}
+
+.die-hold {
+  @apply bg-green-500;
+}
+
+.die-num {
+  @apply text-4xl;
+}
+
+.roll-button {
+  @apply bg-secondary text-white px-10 py-5 rounded-md;
+}
+
+.roll-button:focus {
+  @apply outline-none;
+}
+
+.roll-button:active {
+  @apply shadow-small;
+}

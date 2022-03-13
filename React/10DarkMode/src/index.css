@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+main {
+  @apply bg-react-logo bg-right-top-75 bg-no-repeat pt-20 text-black h-screen;
+}
+
+.main--title {
+  @apply text-6xl font-semibold tracking-wider text-center;
+}
+
+.main--facts {
+  @apply pl-20 mt-10 list-disc pb-10;
+}
+
+.main--facts > li {
+  @apply leading-3 items-center;
+}
+
+.main--facts > li::marker {
+  @apply text-[#61DAFB] text-5xl;
+}
+
+.main--facts > li > p {
+  
+}
+
+.toggle-checkbox ~ .line {
+  @apply border border-primary;
+}
+
+.toggle-checkbox:checked ~ .dot {
+  transform: translateX(100%);
+}
+

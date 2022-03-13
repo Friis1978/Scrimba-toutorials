@@ -1,0 +1,90 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  margin: 0;
+  font-family: "Karla", sans-serif;
+}
+
+.header {
+  @apply flex items-center h-20 p-10 text-green-600 bg-gray-100;
+}
+
+.header--image {
+  @apply h-14;
+}
+
+.header--title {
+  @apply text-2xl ml-2 mr-auto;
+}
+
+.header--project {
+  @apply text-lg font-semibold;
+}
+
+/* Form element */
+
+.form-container {
+  @apply flex bg-green-200 items-center justify-center px-10 md:px-0 md:mx-auto py-10;
+}
+
+.form {
+  @apply max-w-2xl bg-white shadow-md p-20 rounded-md;
+}
+
+.form--input {
+  @apply w-full h-10 mb-5 rounded-md border border-gray-500 px-5 py-2 focus:outline-gray-500;
+}
+
+.form--textarea {
+  @apply w-full h-20 mb-5 rounded-md border border-gray-500 px-5 py-2;
+}
+
+.form--submit--wrapper {
+  @apply flex justify-center mt-5;
+}
+
+.form--submit {
+  @apply w-1/2 bg-green-500 cursor-pointer rounded-md text-white px-5 py-2;
+}
+
+.form--checkbox--wrapper,
+.form--radio--wrapper,
+.form--select--wrapper {
+  @apply flex items-center mt-5;
+}
+
+.form--radio--wrapper {
+  @apply justify-between mt-5;
+}
+
+.form--radio--wrapper > div > label {
+  @apply pl-2;
+}
+
+.form--checkbox {
+  @apply opacity-0 absolute h-8 w-8;
+}
+
+.form--checkbox--button {
+  @apply bg-white border-2 rounded-md border-green-500 w-8 h-8 flex flex-shrink-0 justify-center items-center mr-2 focus-within:border-green-500;
+}
+
+.form--checkbox--button svg {
+  @apply fill-current hidden w-5 h-5 text-red-500 pointer-events-none;
+}
+
+.form--checkbox:checked + div {
+  @apply border-green-500;
+}
+
+.form--checkbox:checked + div svg {
+  @apply block;
+}
+
+.form--radio {
+  @apply appearance-none h-4 w-4 border-4 border-gray-300 rounded-full bg-white checked:bg-white checked:border-black focus:outline-none;
+}
+
+
