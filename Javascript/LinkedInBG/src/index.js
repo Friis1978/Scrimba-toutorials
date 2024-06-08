@@ -57,7 +57,7 @@ const App = (props) => {
           <h4 className="name first-name">Rasmus</h4>
           <h4 className="name last-name">Friis Hansen</h4>
           <div className="divider"></div>
-          <h5 className="job-title">React Developer & AWS DevOps Engineer</h5>
+          <h5 className="job-title">Nuxt.js & Next.js Frontend Developer & AWS DevOps Engineer</h5>
           <h5 className="email">friis1978@gmail.com</h5>
           <h5 className="phone">+45 31 15 25 85</h5>
           
